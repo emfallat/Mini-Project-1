@@ -61,13 +61,14 @@ average **£488.03**, while non-UK orders average **£815.12**. Non-UK orders ar
 **1.7x higher** than UK orders on average. 
 
 ## 6. Returns & cancellations
-**9,288 raw rows (1.71% of all rows)** were cancellations. *To fill in: run the Q6 code for
-the total £ value of cancellations and the most-cancelled products/customers.*
+**9,288 raw rows (1.71% of all rows)** were cancellations, worth **-£896,812.49** in value.
+ 
+The products most associated with cancellations are: **Paper Craft Little Birdie** (-80,995 units), **Medium Ceramic Top Storage Jar** (-74,494), **Rotating Silver
+Angels T-Light Holder** (-9,376), a generic **Manual** adjustment (-4,066), and **Fairy Cake
+Flannel Assorted Colour** (-3,150). 
 
 ## 7. Data-quality memo
-Of the 541,909 raw rows, **19,193 (≈3.5%)** were removed during cleaning — cancellations,
+Of the 541,909 raw rows, **19,193 (≈3.5%)** were removed during cleaning including cancellations,
 non-product lines, invalid prices/quantities, blank descriptions, and exact duplicates.
 Missing `customer_id` (~25% of rows) was kept and labeled `GUEST` rather than dropped, since
-those rows still represent real completed sales revenue. With those documented decisions, this
-dataset is suitable for a board-level revenue and market report, with the caveat that
-customer-level counts undercount unique guest buyers.
+those rows still represent real completed sales revenue. I would trust this dataset for a board report since it removes missing values, removes duplicates, deletes unncessary rows/columns like descriptions and is labeled well. 
